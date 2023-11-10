@@ -23,7 +23,7 @@
                             </div>
                         </div>
                     </button>
-                    </button><a class="btn btn-secondary" href="{{ route('show') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Verificar Pontos Testando</a>
+                    </button><a class="btn btn-secondary" href="{{ route('show') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Verificar Pontos</a>
                 </div>
             </form>
         </div>
