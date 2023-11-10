@@ -5,7 +5,7 @@
                 <h3 class="tile-title">Atualizar Registro de Ponto</h3>
                 <div class="tile-body">
                     <div class="form-group">
-                        <label class="control-label">Insira o Arquivo de Ponto</label>
+                        <label class="control-label">Insira o Arquivo de Ponto!</label>
                         <input class="form-control @error('txt') is-invalid @enderror" type="file" accept=".txt" placeholder="Carregar arquivo .txt" wire:model="txt">
                         @error('txt')
                         <div class="invalid-feedback">Você deve inserir o arquivo .txt</div>
