@@ -28,7 +28,6 @@ class Ponto extends Component
         // Read the file and insert the data into the 'pontos' table
         $contents = Storage::get($path);
         $lines = explode("\n", $contents);
-        $currentYear = Carbon::now()->year;
 
         foreach ($lines as $line) {
             $data = preg_split('/\s+/', $line);
@@ -48,7 +47,7 @@ class Ponto extends Component
                 continue;
             }
 
-            if ($date->year === $currentYear) {
+            if ($date->year === now()->year) {
                 // Insert the data into the database
                 DB::table('pontos')->insert([
                     'no' => $data[0],
