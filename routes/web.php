@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Register;
 use App\Livewire\Ponto;
 use App\Livewire\PontosShow;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +18,7 @@ Route::middleware('auth')->group(function () {
         auth()->logout();
         return redirect()->route('login');
     })->name('logout');
+    Route::get('/registrar', Register::class)->name('register');
 });
 
 
