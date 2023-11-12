@@ -16,8 +16,8 @@
                         <tr>
                             <td>{{ $ponto->en_no }}</td>
                             <td>{{ ucwords($ponto->name) }}</td>
-                            <td>{{ \Carbon\Carbon::parse($ponto->date_time)->format('d/m/Y') }}</td>
-                            <td>{{ \Carbon\Carbon::parse($ponto->date_time)->format('H:i') }}</td>
+                            <td>{{ \Carbon\Carbon::parse($ponto->date)->format('d/m/Y') }}</td>
+                            <td>{{     $ponto->times }}</td>
                         </tr>
                     @empty
                         <tr>
