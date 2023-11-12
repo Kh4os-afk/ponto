@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="tile">
+            <h3 class="tile-title">Data do Arquivo: {{ $dataDoArquivo }}</h3>
             <div class="tile-body">
                 <table id="example" class="display" style="width:100%">
                     <thead>
@@ -17,7 +18,7 @@
                             <td>{{ $ponto->en_no }}</td>
                             <td>{{ ucwords($ponto->name) }}</td>
                             <td>{{ \Carbon\Carbon::parse($ponto->date)->format('d/m/Y') }}</td>
-                            <td>{{     $ponto->times }}</td>
+                            <td>{{ $ponto->times }}</td>
                         </tr>
                     @empty
                         <tr>

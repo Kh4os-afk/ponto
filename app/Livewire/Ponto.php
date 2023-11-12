@@ -57,6 +57,8 @@ class Ponto extends Component
                     'mode' => $data[4],
                     'io_md' => $data[5],
                     'date_time' => $date->toDateTimeString(),
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
                 ]);
             }
         }
